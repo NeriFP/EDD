@@ -1,6 +1,6 @@
 /**
  * Clase que define un cuadrado
- * @author Neri Figueroa Pérez, Isaias Rosas Rendón
+ * @author Neri Figueroa Pérez, Isaías Flores Rendón
  * @version 1.0
  */
 public class Cuadrado implements Figura {
@@ -16,17 +16,27 @@ public class Cuadrado implements Figura {
     public Cuadrado(double lado){
         this.lado=lado;
     }
-
+    /**
+     * Metodo que implementa el area de un cuadrado
+     * @return el area del cuadrado
+     */
     @Override
     public double area() {
         return lado*lado;
     }
-
+    /*
+     * Metodo que implementa el perimetro de un cuadrado
+     * @return el perimetro del cudrado
+     */
     @Override
     public double perimetro() {
-        return lado + lado + lado + lado;
+        return lado*4;
     }
-
+    
+    /**
+     * Metodo que devuelve los lados de un cuadrado
+     * @return el número de lados
+     */
     @Override
     public int getLados() {
         return 4;
